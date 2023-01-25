@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/leykun-gizaw/topaz-slack-app/issues"
   },
-  "homepage": "https://github.com/leykun-gizaw/topaz-slack-app#readme"
+  "homepage": "https://github.com/leykun-gizaw/topaz-slack-app#readme",
+  "dependencies": {
+    "@slack/bolt": "^3.12.2"
+  }
 }

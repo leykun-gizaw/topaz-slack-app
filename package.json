@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/leykun-gizaw/topaz-slack-app#readme",
   "dependencies": {
-    "@slack/bolt": "^3.12.2"
+    "@slack/bolt": "^3.12.2",
+    "dotenv": "^16.0.3"
   }
 }

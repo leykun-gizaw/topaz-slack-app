@@ -2,7 +2,7 @@
   "name": "topaz-slack-app",
   "version": "0.0.1",
   "description": "First ever slack app for parctice",
-  "main": "main.js",
+  "main": "app.js",
   "scripts": {
     "start": "node main.js"
   },

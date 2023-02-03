@@ -4,7 +4,8 @@
   "description": "First ever slack app for parctice",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "build": "tsc",
+    "start": "node dist/app.js"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,9 @@
   "dependencies": {
     "@slack/bolt": "^3.12.2",
     "dotenv": "^16.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "ts-node": "^10.9.1"
   }
 }

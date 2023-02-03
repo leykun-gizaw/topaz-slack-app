@@ -1,6 +1,4 @@
-// Require the Bolt package
-const { App } = require("@slack/bolt");
-require('dotenv').config();
+import { App } from "@slack/bolt";
 
 const app = new App({
 	token: process.env.SLACK_BOT_TOKEN,
@@ -10,6 +8,5 @@ const app = new App({
 (async () => {
 	// Start your app
 	await app.start(process.env.PORT || 3000);
-
 	console.log("⚡️Bolt app is running");
 })();

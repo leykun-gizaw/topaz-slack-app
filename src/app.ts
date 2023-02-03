@@ -6,6 +6,10 @@ const app = new App({
 	signingSecret: process.env.SLACK_SIGNING_SECRET,
 });
 
+app.event('app_home_opened', async({ event, client, context }) => {
+	console.log(event);
+});
+
 (async () => {
 	// Start your app
 	await app.start(process.env.PORT || 3000);

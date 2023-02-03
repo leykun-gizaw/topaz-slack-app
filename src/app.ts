@@ -7,7 +7,27 @@ const app = new App({
 });
 
 app.event('app_home_opened', async({ event, client, context }) => {
-	console.log(event);
+	try {
+		const result = await client.views.publish({
+			user_id: event.user,
+			view: {
+				type: 'home',
+				callback_id: 'home_view',
+				blocks: [
+					{
+						"type": "section",
+						"text": {
+							"type": "mrkdwn",
+							"text": "*Welcome to Topaz* :tada:"
+						}
+					}
+				]
+			}
+		});
+		console.log(result);
+	} catch (err) {
+		console.error(err);
+	}
 });
 
 (async () => {

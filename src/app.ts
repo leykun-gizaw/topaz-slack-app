@@ -18,8 +18,25 @@ app.event('app_home_opened', async({ event, client, context }) => {
 						"type": "section",
 						"text": {
 							"type": "mrkdwn",
-							"text": "*Welcome to Topaz* :tada:"
+							"text": "Hello"
 						}
+					},
+					{
+						"type": "divider"
+					},
+					{
+						"type": "actions",
+						"elements": [
+							{
+								"type": "button",
+								"text": {
+									"type": "plain_text",
+									"text": "Farmhouse",
+									"emoji": true
+								},
+								"value": "click_me_123"
+							},
+						]
 					}
 				]
 			}
